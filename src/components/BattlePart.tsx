@@ -6,7 +6,7 @@ import BattleResult from './BattleResult'
 import { motion } from 'framer-motion'
 import { useGameStatus } from '../store/GameState'
 import { useWinner } from '../store/WinnerStore'
-import WinnerCircle from './WInnerCircle'
+import WinnerCircle from './WinnerCircle'
 
 const BattlePart = () => {
   const selectedPiece = useSelectedPiece((state) => state.selectedPiece)
