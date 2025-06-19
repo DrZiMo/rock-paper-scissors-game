@@ -11,7 +11,7 @@ const SelectPiece = () => {
     <AnimatePresence mode='wait'>
       {gameStatus && !isSelected && (
         <motion.div
-          key={gameStatus === 'selecting' ? 'selecting' : 'not-selecting'}
+          key={'box'}
           initial={{ left: '-100%' }}
           animate={{ left: '0%' }}
           exit={{ left: '-100%' }}
