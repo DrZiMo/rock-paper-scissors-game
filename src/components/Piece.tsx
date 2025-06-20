@@ -12,7 +12,7 @@ interface IPieceProp {
 
 const Piece = ({
   piece,
-  size = 5,
+  size = 20,
   position,
   isAbsolute = true,
 }: IPieceProp) => {
@@ -48,10 +48,8 @@ const Piece = ({
     <div
       className={`${isAbsolute && 'absolute'} ${pos} ${
         selected ? '' : 'cursor-pointer hover:scale-108'
-      } rounded-full p-${
-        size - 1
-      } shadow-[inset_0px_-4px_0px_0px_rgba(0,0,0,0.2)] transition`}
-      style={gradientStyle}
+      } rounded-full shadow-[inset_0px_-4px_0px_0px_rgba(0,0,0,0.2)] transition`}
+      style={{ ...gradientStyle, padding: `${size - 4}px` }}
       onClick={() => {
         if (selected) return
         changeSelectedPiece(piece)
@@ -60,9 +58,8 @@ const Piece = ({
       }}
     >
       <div
-        className={`bg-white rounded-full p-${
-          size || 7
-        } shadow-[inset_0px_4px_0px_0px_rgba(0,0,0,0.2)]`}
+        className={`bg-white rounded-full shadow-[inset_0px_4px_0px_0px_rgba(0,0,0,0.2)]`}
+        style={{ padding: `${size}px` }}
       >
         <img
           src={`/images/icon-${piece}.svg`}

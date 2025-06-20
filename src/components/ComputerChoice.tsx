@@ -27,7 +27,7 @@ const ComputerChoice = () => {
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
             <Piece
               piece={randomPiece as 'paper' | 'rock' | 'scissors'}
-              size={7}
+              size={28}
               isAbsolute={false}
             />
           </motion.div>

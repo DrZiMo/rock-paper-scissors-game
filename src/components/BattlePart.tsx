@@ -32,7 +32,7 @@ const BattlePart = () => {
               <div className='relative min-w-full flex justify-between text-sm text-center'>
                 <div className=' space-y-5'>
                   {winner == 'player' && <WinnerCircle />}
-                  <Piece piece={selectedPiece} size={7} isAbsolute={false} />
+                  <Piece piece={selectedPiece} size={28} isAbsolute={false} />
                   <p className='text-white font-bold'>YOU PICKED</p>
                 </div>
                 <div className='space-y-5 w-fit'>
