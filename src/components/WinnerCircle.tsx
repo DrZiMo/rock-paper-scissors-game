@@ -3,11 +3,16 @@ import { useWinner } from '../store/WinnerStore'
 
 const WinnerCircle = () => {
   const winner = useWinner((state) => state.winner)
+
+  // Only show the animation if there's a winner
+  if (!winner) return null
+
   const circles = [
-    { p: 25, top: '-top-6', left: '-left-7', right: '-right-7' },
-    { p: 35, top: '-top-15', left: '-left-16', right: '-right-16' },
-    { p: 45, top: '-top-25', left: '-left-25', right: '-right-25' },
+    { p: 90, top: '-20px', xPos: '-15px' },
+    { p: 120, top: '-50px', xPos: '-44px' },
+    { p: 140, top: '-70px', xPos: '-65px' },
   ]
+
   return (
     <>
       {circles.map((circle, i) => (
@@ -20,9 +25,17 @@ const WinnerCircle = () => {
             duration: 0.2,
             ease: 'easeOut',
           }}
-          className={`bg-white p-${circle.p} rounded-full ${circle.top} ${
-            winner == 'player' ? circle.left : circle.right
-          } absolute -z-10`}
+          style={{
+            padding: `${circle.p}px`,
+            position: 'absolute',
+            top: circle.top,
+            left: winner === 'player' ? circle.xPos : undefined,
+            right: winner === 'computer' ? circle.xPos : undefined,
+            zIndex: -10,
+            backgroundColor: 'white',
+            borderRadius: '9999px',
+          }}
+          className='w-fit'
         />
       ))}
     </>

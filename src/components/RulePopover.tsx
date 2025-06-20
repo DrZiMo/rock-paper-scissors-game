@@ -7,15 +7,15 @@ const RulePopover = () => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
-          key='box'
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0, opacity: 0 }}
-          className='absolute top-0 left-0 z-10'
-        >
+        <div className='absolute top-0 left-0 z-10'>
           <div className='relative flex justify-center items-center'>
-            <div className='w-screen lg:w-[700px] h-screen lg:h-fit bg-white absolute z-10 top-0 left-0 lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:rounded-md'>
+            <motion.div
+              key='box'
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0, opacity: 0 }}
+              className='w-screen lg:w-[700px] h-screen lg:h-fit bg-white absolute z-10 top-0 left-0 lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:rounded-md'
+            >
               <button
                 onClick={toggleOpen}
                 className='hidden lg:block ml-auto p-5'
@@ -33,10 +33,10 @@ const RulePopover = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
             <div className='w-screen h-screen bg-black opacity-50 hidden lg:block'></div>
           </div>
-        </motion.div>
+        </div>
       )}
     </AnimatePresence>
   )

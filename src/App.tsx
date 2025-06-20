@@ -5,7 +5,7 @@ import RulePopover from './components/RulePopover'
 
 const App = () => {
   return (
-    <div className='p-6 flex flex-col h-screen max-w-[700px] mx-auto'>
+    <div className='p-6 flex flex-col h-screen max-w-[700px] mx-auto overflow-hidden'>
       <Header />
       <GameContainer />
       <Button />
