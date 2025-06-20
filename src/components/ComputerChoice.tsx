@@ -25,7 +25,11 @@ const ComputerChoice = () => {
           <div className='p-18 bg-black rounded-full opacity-40'></div>
         ) : (
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
-            <Piece piece={randomPiece} size={7} isAbsolute={false} />
+            <Piece
+              piece={randomPiece as 'paper' | 'rock' | 'scissors'}
+              size={7}
+              isAbsolute={false}
+            />
           </motion.div>
         )}
       </AnimatePresence>
