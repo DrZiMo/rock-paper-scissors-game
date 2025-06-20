@@ -20,21 +20,16 @@ const RulePopover = () => {
                 onClick={toggleOpen}
                 className='hidden lg:block ml-auto p-5'
               >
-                <img src={`${import.meta.env.BASE_URL}images/icon-close.svg`} />
+                <img src='/images/icon-close.svg' />
               </button>
               <div className='h-full flex flex-col justify-center'>
                 <div className=' h-[70%] lg:h-[90%] mx-auto py-10 flex flex-col items-center justify-between'>
                   <h1 className='text-center text-xl font-extrabold text-dark-text lg:mb-10'>
                     RULES
                   </h1>
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/image-rules.svg`}
-                    alt=''
-                  />
+                  <img src='/images/image-rules.svg' alt='' />
                   <button onClick={toggleOpen} className='lg:hidden block'>
-                    <img
-                      src={`${import.meta.env.BASE_URL}images/icon-close.svg`}
-                    />
+                    <img src='/images/icon-close.svg' />
                   </button>
                 </div>
               </div>

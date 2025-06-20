@@ -17,10 +17,7 @@ const SelectPiece = () => {
           exit={{ left: '-100%' }}
           className='w-[65%] max-w-[340px] relative'
         >
-          <img
-            src={`${import.meta.env.BASE_URL}images/bg-triangle.svg`}
-            className='mx-auto'
-          />
+          <img src='/images/bg-triangle.svg' className='mx-auto' />
           <Piece piece='paper' position='left' />
           <Piece piece='rock' position='bottom' />
           <Piece piece='scissors' position='right' />
