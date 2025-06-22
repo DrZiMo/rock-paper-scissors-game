@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/56457c1f-82b3-41ec-89ea-38e08ab8f13b)# 🪨📄✂️ Rock Paper Scissors Game
+# 🪨📄✂️ Rock Paper Scissors Game
 
 A simple and fun Rock Paper Scissors game built with modern web technologies!
 
