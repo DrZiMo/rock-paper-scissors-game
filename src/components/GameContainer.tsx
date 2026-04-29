@@ -5,7 +5,7 @@ const GameContainer = () => {
   return (
     <div
       className='flex-1 flex justify-center items-center w-full max-w-[540px] h-full relative mx-auto'
-      style={{ paddingBlock: '70px' }}
+      style={{ paddingBlock: '20px' }}
     >
       {/* 1. Select Piece */}
       <SelectPiece />
