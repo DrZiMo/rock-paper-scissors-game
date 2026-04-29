@@ -2,6 +2,10 @@
 
 A simple and fun Rock Paper Scissors game built with modern web technologies!
 
+👉[Live Preview](https://rock-paper-scissors-weld-three.vercel.app/)
+
+![Game Preview](./public/rock-paper-scissor-preview.png)
+
 ## 🛠 Tech Stack
 
 - ⚛️ **React + Vite** — Fast development powered by modern tooling.

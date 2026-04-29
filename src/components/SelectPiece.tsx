@@ -15,9 +15,9 @@ const SelectPiece = () => {
           initial={{ left: '-100%' }}
           animate={{ left: '0%' }}
           exit={{ left: '-100%' }}
-          className='w-[65%] max-w-[340px] relative md:h-[70%]'
+          className='w-[65%] max-w-[340px] relative'
         >
-          <img src='/images/bg-triangle.svg' className='mx-auto md:h-[98%]' />
+          <img src='/images/bg-triangle.svg' className='mx-auto' />
           <Piece piece='paper' position='left' />
           <Piece piece='rock' position='bottom' />
           <Piece piece='scissors' position='right' />
